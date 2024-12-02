@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atminties žaidimas</title>
+    <link rel="stylesheet" href="stilius.css">
+</head>
+
+<body>
+
+    <div class="konteineris">
+        <h2>Atminties žaidimas</h2>
+        
+        <div id="pradzia">
+            <label for="vardas">Įveskite savo vardą:</label>
+            <input type="text" id="vardas" placeholder="Jūsų vardas">
+            <div id="klaida" style="display: none; color: red;">Įveskite savo vardą!</div>
+        
+            <div class="button-container">
+                <label for="lygiai">Pasirinkite žaidimo lygį:</label>
+                <select id="lygiai">
+                    <option value="5">Lengvas (5 poros)</option>
+                    <option value="10">Vidutinis (10 porų)</option>
+                    <option value="15">Sunkus (15 porų)</option>
+                </select>
+            </div>
+        
+            <div class="button-container">
+                <button class="Pradeti">Pradėti</button>
+            </div>
+            <!-- <button class="Pradeti">Pradėti</button> -->
+        </div>
+
+        
+
+        <div id="zaidimo-container" style="display: none;">
+            <p>Rezultatas: <span class="rezultatas">0</span> taškų</p>
+            <div class="zaidimas"></div>
+            <button class="Perkrauti">Perkrauti žaidimą</button>
+        </div>
+        
+        <ul id="geriausi-rezultatai" style="display: none;"></ul>
+    </div>
+
+    <script src="funkcijos.js"></script>
+
+</body>
+
+</html>
