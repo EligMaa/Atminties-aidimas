@@ -1,1 +1,1 @@
-# Atminties-aidimas
+# Atminties-žaidimas
